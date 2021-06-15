@@ -110,9 +110,9 @@ namespace AhorcadoGrupo4
             juego.palabraParcial[1] = 'a';
             juego.palabraParcial[4] = 'g';
             juego.palabraParcial[5] = 'a';
-            List<char> letrasIngresadas = new List<char>() { 'e', 'p', 'g', 'a' };
+            juego.letrasIngresadas = new List<char>() { 'e', 'p', 'g', 'a' };
             //Act
-            var palabraParcial = juego.MostrarPalabra(juego.palabraHardcodeada, letrasIngresadas);
+            var palabraParcial = juego.MostrarPalabra(juego.palabraHardcodeada, juego.letrasIngresadas);
             //Assert
             Assert.Equal(juego.palabraParcial, palabraParcial);
         }
@@ -155,5 +155,87 @@ namespace AhorcadoGrupo4
             //Assert
             Assert.Equal(juego.estado, estadoPartida);
         }
+
+        //Generar palabra random
+        [Fact]
+        public void PalabraGeneradaRandom()
+        {
+            //Arrange
+            var juego = new Jugada();
+
+            //Act
+            string palabraGenerada = juego.GenerarPalabraRandom();
+
+            //Assert
+            Assert.NotEmpty(palabraGenerada);
+        }
+
+        //Listar Letras usadas
+
+        //Jugador no ingreso ninguna letra
+        [Fact]
+        public void NingunaLetraIngresada()
+        {
+            //Arrange
+            var juego = new Jugada();
+
+            //Act
+            List<char> lista = juego.ListaLetrasIngresadas();
+
+            //Assert
+            Assert.Empty(lista);
+        }
+
+        //Jugador ingreso letras
+        [Fact]
+        public void LetrasIngresada()
+        {
+            //Arrange
+            var juego = new Jugada();
+            juego.letrasIngresadas = new List<char>() { 'e', 'p', 'g', 'a' };
+
+            //Act
+            List<char> lista = juego.ListaLetrasIngresadas();
+
+            //Assert
+            Assert.NotEmpty(lista);
+        }
+
+        //Contar cantidad de fallos
+
+        //Cantidad de fallos 0
+        [Fact]
+        public void NingunFallo()
+        {
+            //Arrange
+            var juego = new Jugada();
+            int fallos = 0;
+
+            //Act
+            int cantidadfallos = juego.CantidadFallos();
+
+            //Assert
+            Assert.Equal(fallos, cantidadfallos);
+        }
+
+        //Cantidad de fallos 7
+        [Fact]
+        public void LimiteFallos()
+        {
+            //Arrange
+            var juego = new Jugada();
+            int fallos = 7;
+            juego.palabraHardcodeada = "gato";
+            juego.letrasIngresadas = new List<char>() { 'e', 'p', 'x', 'q', 'w', 'j', 'y' };
+
+            //Act
+            juego.MostrarPalabra(juego.palabraHardcodeada, juego.letrasIngresadas);
+            int cantidadfallos = juego.CantidadFallos();
+
+            //Assert
+            Assert.Equal(fallos, cantidadfallos);
+        }
+
+
     }
 }

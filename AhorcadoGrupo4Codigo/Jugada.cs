@@ -10,6 +10,9 @@ namespace AhorcadoGrupo4Codigo
         public string nombreJugador;
         public string dificultad;
         public char[] palabraParcial;
+        public List<char> letrasIngresadas = new List<char>();
+        public List<string> opcionesPalabras = new List<string>() { "gato", "perro", "barco", "casa", "pelota" };
+        public int cantidadFallos = 0;
         public string GenerarPalabra()
         {
             return palabraHardcodeada;
@@ -17,11 +20,11 @@ namespace AhorcadoGrupo4Codigo
 
         public bool PerteneceLetraPalabra(string letra)
         {
-            if(String.IsNullOrEmpty(letra))
+            if (String.IsNullOrEmpty(letra))
             {
                 return false;
             }
-            else if(palabraHardcodeada.Contains(letra))
+            else if (palabraHardcodeada.Contains(letra))
             {
                 return true;
             }
@@ -46,6 +49,10 @@ namespace AhorcadoGrupo4Codigo
                         }
                     } while (minIndex != -1);
                 }
+                else
+                {
+                    cantidadFallos = cantidadFallos + 1;
+                }
             }
             return palabraParcial;
         }
@@ -65,6 +72,23 @@ namespace AhorcadoGrupo4Codigo
         public string SeleccionarDificultad()
         {
             return dificultad;
+        }
+
+        public string GenerarPalabraRandom()
+        {
+            Random rnd = new Random();
+            int index = rnd.Next(0, opcionesPalabras.Count);
+            return opcionesPalabras[index];
+        }
+
+        public List<char> ListaLetrasIngresadas()
+        {
+            return letrasIngresadas;
+        }
+
+        public int CantidadFallos()
+        {
+            return cantidadFallos;
         }
     }
 }
