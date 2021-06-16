@@ -23,6 +23,5 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - name: Jest coverage report
-      uses: ArtiomTr/jest-coverage-report-action@v1.3
-
+    - name: Code Coverage Report
+      uses: romeovs/lcov-reporter-action@v0.2.11
