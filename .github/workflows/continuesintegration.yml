@@ -23,5 +23,5 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - name: Code Coverage Report
-      uses: romeovs/lcov-reporter-action@v0.2.11
+    - name: Code Coverage
+      uses: codecov/codecov-action@v1
