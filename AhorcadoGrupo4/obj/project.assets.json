@@ -5876,11 +5876,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\paola.giorsetti\\source\\repos\\AhorcadoGrupo4\\AhorcadoGrupo4\\AhorcadoGrupo4.csproj",
+      "projectUniqueName": "C:\\Users\\paola.giorsetti\\Desktop\\agile tp\\AhorcadoGrupo4\\AhorcadoGrupo4\\AhorcadoGrupo4.csproj",
       "projectName": "AhorcadoGrupo4",
-      "projectPath": "C:\\Users\\paola.giorsetti\\source\\repos\\AhorcadoGrupo4\\AhorcadoGrupo4\\AhorcadoGrupo4.csproj",
+      "projectPath": "C:\\Users\\paola.giorsetti\\Desktop\\agile tp\\AhorcadoGrupo4\\AhorcadoGrupo4\\AhorcadoGrupo4.csproj",
       "packagesPath": "C:\\Users\\paola.giorsetti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\paola.giorsetti\\source\\repos\\AhorcadoGrupo4\\AhorcadoGrupo4\\obj\\",
+      "outputPath": "C:\\Users\\paola.giorsetti\\Desktop\\agile tp\\AhorcadoGrupo4\\AhorcadoGrupo4\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5899,8 +5899,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\paola.giorsetti\\source\\repos\\AhorcadoGrupo4\\AhorcadoGrupo4Codigo\\AhorcadoGrupo4Codigo.csproj": {
-              "projectPath": "C:\\Users\\paola.giorsetti\\source\\repos\\AhorcadoGrupo4\\AhorcadoGrupo4Codigo\\AhorcadoGrupo4Codigo.csproj"
+            "C:\\Users\\paola.giorsetti\\Desktop\\agile tp\\AhorcadoGrupo4\\AhorcadoGrupo4Codigo\\AhorcadoGrupo4Codigo.csproj": {
+              "projectPath": "C:\\Users\\paola.giorsetti\\Desktop\\agile tp\\AhorcadoGrupo4\\AhorcadoGrupo4Codigo\\AhorcadoGrupo4Codigo.csproj"
             }
           }
         }
