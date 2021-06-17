@@ -23,5 +23,5 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - name: Code Coverage
+    - name: Code Coverage Test
       uses: codecov/codecov-action@v1
