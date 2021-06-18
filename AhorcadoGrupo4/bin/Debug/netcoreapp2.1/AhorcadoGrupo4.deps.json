@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "02c71efa754abbb2c2ea7a6ef885a05d5d8419b2"
+    "signature": "fabeeeb30f44de2c922c3fe3c59632c3ab336fb4"
   },
   "compilationOptions": {},
   "targets": {
@@ -10,13 +10,19 @@
         "dependencies": {
           "AhorcadoGrupo4Codigo": "1.0.0",
           "Microsoft.NET.Test.Sdk": "15.9.0",
+          "coverlet.collector": "3.0.3",
+          "coverlet.msbuild": "3.0.3",
           "xunit": "2.4.1",
+          "xunit.console": "2.4.1",
+          "xunit.runner.console": "2.4.1",
           "xunit.runner.visualstudio": "2.4.3"
         },
         "runtime": {
           "AhorcadoGrupo4.dll": {}
         }
       },
+      "coverlet.collector/3.0.3": {},
+      "coverlet.msbuild/3.0.3": {},
       "Microsoft.CodeCoverage/15.9.0": {
         "runtime": {
           "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
@@ -1021,6 +1027,17 @@
           }
         }
       },
+      "xunit.console/2.4.1": {
+        "dependencies": {
+          "xunit.runner.reporters": "2.4.1"
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/xunit.console.dll": {
+            "assemblyVersion": "2.4.1.0",
+            "fileVersion": "2.4.1.0"
+          }
+        }
+      },
       "xunit.core/2.4.1": {
         "dependencies": {
           "xunit.extensibility.core": "2.4.1",
@@ -1049,8 +1066,35 @@
           }
         }
       },
+      "xunit.runner.console/2.4.1": {},
+      "xunit.runner.reporters/2.4.1": {
+        "dependencies": {
+          "xunit.runner.utility": "2.4.1"
+        },
+        "runtime": {
+          "lib/netcoreapp1.0/xunit.runner.reporters.netcoreapp10.dll": {
+            "assemblyVersion": "2.4.1.0",
+            "fileVersion": "2.4.1.0"
+          }
+        }
+      },
+      "xunit.runner.utility/2.4.1": {
+        "dependencies": {
+          "System.Runtime.Loader": "4.0.0",
+          "xunit.abstractions": "2.0.3"
+        },
+        "runtime": {
+          "lib/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll": {
+            "assemblyVersion": "2.4.1.0",
+            "fileVersion": "2.4.1.0"
+          }
+        }
+      },
       "xunit.runner.visualstudio/2.4.3": {},
       "AhorcadoGrupo4Codigo/1.0.0": {
+        "dependencies": {
+          "xunit.console": "2.4.1"
+        },
         "runtime": {
           "AhorcadoGrupo4Codigo.dll": {}
         }
@@ -1062,6 +1106,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "coverlet.collector/3.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bHLTnTiZgOW9LIZt8MfHg1KwwrmkU/rHA4GwvFmiMYYBlQZK3MXTX37HLvJCM3aXIgiyjW3Vb8KbZgCUclpQDw==",
+      "path": "coverlet.collector/3.0.3",
+      "hashPath": "coverlet.collector.3.0.3.nupkg.sha512"
+    },
+    "coverlet.msbuild/3.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XqWoNlswnigruiXmEn2byMoPfwkLfMsTLajgqUrS30w6B83ol1vpLjq8t5KOUozoeJ3IUDWsoQLgL6npKGBABA==",
+      "path": "coverlet.msbuild/3.0.3",
+      "hashPath": "coverlet.msbuild.3.0.3.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/15.9.0": {
       "type": "package",
@@ -1567,6 +1625,13 @@
       "path": "xunit.assert/2.4.1",
       "hashPath": "xunit.assert.2.4.1.nupkg.sha512"
     },
+    "xunit.console/2.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Fz4SkqGdBMlh4YJrZhyqJ6gxsggNtnYs9PFnJtO0FEce6mWSJ8Dpb+aLGqiHTOspO5qeUwCcEBXGKUMvzn+NRw==",
+      "path": "xunit.console/2.4.1",
+      "hashPath": "xunit.console.2.4.1.nupkg.sha512"
+    },
     "xunit.core/2.4.1": {
       "type": "package",
       "serviceable": true,
@@ -1587,6 +1652,27 @@
       "sha512": "sha512-gc8TxVPew3+Hy6qJTs70JHirtSt5ky380gxC8QF+VmWOs6EdWGlo9xm3URkm+gPbE9roVVfnrw5AuqFNr4R52Q==",
       "path": "xunit.extensibility.execution/2.4.1",
       "hashPath": "xunit.extensibility.execution.2.4.1.nupkg.sha512"
+    },
+    "xunit.runner.console/2.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZOAIWPBvWIxpavMUiRho4Lc3SFR8dZV45kOWqOvnZy1/hipEIZjGcrH6ZXrrNjfGdifDjP/m18hEYE0Huk6JoA==",
+      "path": "xunit.runner.console/2.4.1",
+      "hashPath": "xunit.runner.console.2.4.1.nupkg.sha512"
+    },
+    "xunit.runner.reporters/2.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-K39bTqPczrqmGS4z1dg/hvbGtxjMl6WE7T1wVlc351e2lf89gYpECjrZLR1unZCN7cTKmoWmul7mNZsF25UHPg==",
+      "path": "xunit.runner.reporters/2.4.1",
+      "hashPath": "xunit.runner.reporters.2.4.1.nupkg.sha512"
+    },
+    "xunit.runner.utility/2.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hSqHLOTkdWhw7wOl6RymrQZEMxA7g7/EOnVtTOYVU9KVu150w97WvEx/F6mx2vGyttdqGzdTF64lY7jlK3h3lg==",
+      "path": "xunit.runner.utility/2.4.1",
+      "hashPath": "xunit.runner.utility.2.4.1.nupkg.sha512"
     },
     "xunit.runner.visualstudio/2.4.3": {
       "type": "package",

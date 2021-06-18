@@ -1,0 +1,9 @@
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4Codigo\bin\Release\netcoreapp2.1\AhorcadoGrupo4Codigo.deps.json
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4Codigo\bin\Release\netcoreapp2.1\AhorcadoGrupo4Codigo.dll
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4Codigo\bin\Release\netcoreapp2.1\AhorcadoGrupo4Codigo.pdb
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4Codigo\obj\Release\netcoreapp2.1\AhorcadoGrupo4Codigo.csprojAssemblyReference.cache
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4Codigo\obj\Release\netcoreapp2.1\AhorcadoGrupo4Codigo.csproj.CoreCompileInputs.cache
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4Codigo\obj\Release\netcoreapp2.1\AhorcadoGrupo4Codigo.AssemblyInfoInputs.cache
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4Codigo\obj\Release\netcoreapp2.1\AhorcadoGrupo4Codigo.AssemblyInfo.cs
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4Codigo\obj\Release\netcoreapp2.1\AhorcadoGrupo4Codigo.dll
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4Codigo\obj\Release\netcoreapp2.1\AhorcadoGrupo4Codigo.pdb

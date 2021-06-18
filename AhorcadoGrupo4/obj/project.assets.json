@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "coverlet.collector/3.0.3": {
+        "type": "package",
+        "build": {
+          "build/netstandard1.0/coverlet.collector.targets": {}
+        }
+      },
+      "coverlet.msbuild/3.0.3": {
+        "type": "package",
+        "build": {
+          "build/coverlet.msbuild.props": {},
+          "build/coverlet.msbuild.targets": {}
+        }
+      },
       "Microsoft.CodeCoverage/15.9.0": {
         "type": "package",
         "compile": {
@@ -1629,6 +1642,18 @@
           "lib/netstandard1.1/xunit.assert.dll": {}
         }
       },
+      "xunit.console/2.4.1": {
+        "type": "package",
+        "dependencies": {
+          "xunit.runner.reporters": "[2.4.1]"
+        },
+        "compile": {
+          "lib/netcoreapp2.0/xunit.console.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/xunit.console.dll": {}
+        }
+      },
       "xunit.core/2.4.1": {
         "type": "package",
         "dependencies": {
@@ -1676,6 +1701,33 @@
           "build/xunit.runner.console.props": {}
         }
       },
+      "xunit.runner.reporters/2.4.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "xunit.runner.utility": "[2.4.1]"
+        },
+        "compile": {
+          "lib/netcoreapp1.0/xunit.runner.reporters.netcoreapp10.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp1.0/xunit.runner.reporters.netcoreapp10.dll": {}
+        }
+      },
+      "xunit.runner.utility/2.4.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "System.Runtime.Loader": "4.0.0",
+          "xunit.abstractions": "2.0.3"
+        },
+        "compile": {
+          "lib/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll": {}
+        }
+      },
       "xunit.runner.visualstudio/2.4.3": {
         "type": "package",
         "build": {
@@ -1685,6 +1737,9 @@
       "AhorcadoGrupo4Codigo/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "xunit.console": "2.4.1"
+        },
         "compile": {
           "bin/placeholder/AhorcadoGrupo4Codigo.dll": {}
         },
@@ -1695,6 +1750,116 @@
     }
   },
   "libraries": {
+    "coverlet.collector/3.0.3": {
+      "sha512": "bHLTnTiZgOW9LIZt8MfHg1KwwrmkU/rHA4GwvFmiMYYBlQZK3MXTX37HLvJCM3aXIgiyjW3Vb8KbZgCUclpQDw==",
+      "type": "package",
+      "path": "coverlet.collector/3.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/netstandard1.0/Microsoft.CSharp.dll",
+        "build/netstandard1.0/Microsoft.DotNet.PlatformAbstractions.dll",
+        "build/netstandard1.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "build/netstandard1.0/Microsoft.Extensions.DependencyInjection.dll",
+        "build/netstandard1.0/Microsoft.Extensions.DependencyModel.dll",
+        "build/netstandard1.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "build/netstandard1.0/Microsoft.TestPlatform.CoreUtilities.dll",
+        "build/netstandard1.0/Microsoft.TestPlatform.PlatformAbstractions.dll",
+        "build/netstandard1.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll",
+        "build/netstandard1.0/Mono.Cecil.Mdb.dll",
+        "build/netstandard1.0/Mono.Cecil.Pdb.dll",
+        "build/netstandard1.0/Mono.Cecil.Rocks.dll",
+        "build/netstandard1.0/Mono.Cecil.dll",
+        "build/netstandard1.0/Newtonsoft.Json.dll",
+        "build/netstandard1.0/NuGet.Frameworks.dll",
+        "build/netstandard1.0/System.AppContext.dll",
+        "build/netstandard1.0/System.Collections.Immutable.dll",
+        "build/netstandard1.0/System.Dynamic.Runtime.dll",
+        "build/netstandard1.0/System.IO.FileSystem.Primitives.dll",
+        "build/netstandard1.0/System.Linq.Expressions.dll",
+        "build/netstandard1.0/System.Linq.dll",
+        "build/netstandard1.0/System.ObjectModel.dll",
+        "build/netstandard1.0/System.Reflection.Emit.ILGeneration.dll",
+        "build/netstandard1.0/System.Reflection.Emit.Lightweight.dll",
+        "build/netstandard1.0/System.Reflection.Emit.dll",
+        "build/netstandard1.0/System.Reflection.Metadata.dll",
+        "build/netstandard1.0/System.Reflection.TypeExtensions.dll",
+        "build/netstandard1.0/System.Runtime.Serialization.Primitives.dll",
+        "build/netstandard1.0/System.Text.RegularExpressions.dll",
+        "build/netstandard1.0/System.Threading.Tasks.Extensions.dll",
+        "build/netstandard1.0/System.Threading.dll",
+        "build/netstandard1.0/System.Xml.ReaderWriter.dll",
+        "build/netstandard1.0/System.Xml.XDocument.dll",
+        "build/netstandard1.0/coverlet.collector.deps.json",
+        "build/netstandard1.0/coverlet.collector.dll",
+        "build/netstandard1.0/coverlet.collector.pdb",
+        "build/netstandard1.0/coverlet.collector.targets",
+        "build/netstandard1.0/coverlet.core.dll",
+        "build/netstandard1.0/coverlet.core.pdb",
+        "coverlet-icon.png",
+        "coverlet.collector.3.0.3.nupkg.sha512",
+        "coverlet.collector.nuspec"
+      ]
+    },
+    "coverlet.msbuild/3.0.3": {
+      "sha512": "XqWoNlswnigruiXmEn2byMoPfwkLfMsTLajgqUrS30w6B83ol1vpLjq8t5KOUozoeJ3IUDWsoQLgL6npKGBABA==",
+      "type": "package",
+      "path": "coverlet.msbuild/3.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.Build.Framework.dll",
+        "build/Microsoft.Build.Utilities.Core.dll",
+        "build/Microsoft.CSharp.dll",
+        "build/Microsoft.DotNet.PlatformAbstractions.dll",
+        "build/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "build/Microsoft.Extensions.DependencyInjection.dll",
+        "build/Microsoft.Extensions.DependencyModel.dll",
+        "build/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "build/Mono.Cecil.Mdb.dll",
+        "build/Mono.Cecil.Pdb.dll",
+        "build/Mono.Cecil.Rocks.dll",
+        "build/Mono.Cecil.dll",
+        "build/Newtonsoft.Json.dll",
+        "build/System.AppContext.dll",
+        "build/System.Collections.Concurrent.dll",
+        "build/System.Collections.Immutable.dll",
+        "build/System.Collections.NonGeneric.dll",
+        "build/System.Dynamic.Runtime.dll",
+        "build/System.IO.FileSystem.Primitives.dll",
+        "build/System.Linq.Expressions.dll",
+        "build/System.Linq.dll",
+        "build/System.ObjectModel.dll",
+        "build/System.Private.DataContractSerialization.dll",
+        "build/System.Reflection.Emit.ILGeneration.dll",
+        "build/System.Reflection.Emit.Lightweight.dll",
+        "build/System.Reflection.Emit.dll",
+        "build/System.Reflection.Metadata.dll",
+        "build/System.Reflection.TypeExtensions.dll",
+        "build/System.Resources.Reader.dll",
+        "build/System.Runtime.Serialization.Primitives.dll",
+        "build/System.Runtime.Serialization.Xml.dll",
+        "build/System.Text.RegularExpressions.dll",
+        "build/System.Threading.Tasks.Extensions.dll",
+        "build/System.Threading.Tasks.Parallel.dll",
+        "build/System.Threading.Thread.dll",
+        "build/System.Threading.ThreadPool.dll",
+        "build/System.Threading.dll",
+        "build/System.Xml.ReaderWriter.dll",
+        "build/System.Xml.XDocument.dll",
+        "build/System.Xml.XmlDocument.dll",
+        "build/System.Xml.XmlSerializer.dll",
+        "build/coverlet.core.dll",
+        "build/coverlet.core.pdb",
+        "build/coverlet.msbuild.props",
+        "build/coverlet.msbuild.targets",
+        "build/coverlet.msbuild.tasks.dll",
+        "build/coverlet.msbuild.tasks.pdb",
+        "coverlet-icon.png",
+        "coverlet.msbuild.3.0.3.nupkg.sha512",
+        "coverlet.msbuild.nuspec"
+      ]
+    },
     "Microsoft.CodeCoverage/15.9.0": {
       "sha512": "7hLVTRUCxAALZakJQgGfWJammOBXWiLyGGpaFz/+zDR+Rwj+sB4RMgEZAw8HQDpc1tjpbnzq9JEs/+OmFI94XA==",
       "type": "package",
@@ -5778,6 +5943,19 @@
         "xunit.assert.nuspec"
       ]
     },
+    "xunit.console/2.4.1": {
+      "sha512": "Fz4SkqGdBMlh4YJrZhyqJ6gxsggNtnYs9PFnJtO0FEce6mWSJ8Dpb+aLGqiHTOspO5qeUwCcEBXGKUMvzn+NRw==",
+      "type": "package",
+      "path": "xunit.console/2.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp1.0/xunit.console.dll",
+        "lib/netcoreapp2.0/xunit.console.dll",
+        "xunit.console.2.4.1.nupkg.sha512",
+        "xunit.console.nuspec"
+      ]
+    },
     "xunit.core/2.4.1": {
       "sha512": "8taMlAQy9qQ7Tbiqr2TAwGkU+X0sckQ+96j7R9OX/Ut1gmHEa4QYIrI8c15j3iKTj3XzyQMVohkTMWa80BRf6w==",
       "type": "package",
@@ -5904,6 +6082,45 @@
         "xunit.runner.console.nuspec"
       ]
     },
+    "xunit.runner.reporters/2.4.1": {
+      "sha512": "K39bTqPczrqmGS4z1dg/hvbGtxjMl6WE7T1wVlc351e2lf89gYpECjrZLR1unZCN7cTKmoWmul7mNZsF25UHPg==",
+      "type": "package",
+      "path": "xunit.runner.reporters/2.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/xunit.runner.reporters.net452.dll",
+        "lib/netcoreapp1.0/xunit.runner.reporters.netcoreapp10.dll",
+        "lib/netstandard1.1/xunit.runner.reporters.netstandard11.dll",
+        "lib/netstandard1.5/xunit.runner.reporters.netstandard15.dll",
+        "xunit.runner.reporters.2.4.1.nupkg.sha512",
+        "xunit.runner.reporters.nuspec"
+      ]
+    },
+    "xunit.runner.utility/2.4.1": {
+      "sha512": "hSqHLOTkdWhw7wOl6RymrQZEMxA7g7/EOnVtTOYVU9KVu150w97WvEx/F6mx2vGyttdqGzdTF64lY7jlK3h3lg==",
+      "type": "package",
+      "path": "xunit.runner.utility/2.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/xunit.runner.utility.net35.dll",
+        "lib/net35/xunit.runner.utility.net35.xml",
+        "lib/net452/xunit.runner.utility.net452.dll",
+        "lib/net452/xunit.runner.utility.net452.xml",
+        "lib/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll",
+        "lib/netcoreapp1.0/xunit.runner.utility.netcoreapp10.xml",
+        "lib/netstandard1.1/xunit.runner.utility.netstandard11.dll",
+        "lib/netstandard1.1/xunit.runner.utility.netstandard11.xml",
+        "lib/netstandard1.5/xunit.runner.utility.netstandard15.dll",
+        "lib/netstandard1.5/xunit.runner.utility.netstandard15.xml",
+        "lib/uap10.0/xunit.runner.utility.uwp10.dll",
+        "lib/uap10.0/xunit.runner.utility.uwp10.pri",
+        "lib/uap10.0/xunit.runner.utility.uwp10.xml",
+        "xunit.runner.utility.2.4.1.nupkg.sha512",
+        "xunit.runner.utility.nuspec"
+      ]
+    },
     "xunit.runner.visualstudio/2.4.3": {
       "sha512": "2LDRJEJdsk+YM1szL+VeGgizmvVdiDTdSicX/UvkXzoGrmyxZCehet+zHiFdq2IoVhUrstpxWssZRuyek1KZ9A==",
       "type": "package",
@@ -5946,7 +6163,10 @@
       "AhorcadoGrupo4Codigo >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 15.9.0",
       "Microsoft.NETCore.App >= 2.1.0",
+      "coverlet.collector >= 3.0.3",
+      "coverlet.msbuild >= 3.0.3",
       "xunit >= 2.4.1",
+      "xunit.console >= 2.4.1",
       "xunit.runner.console >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.3"
     ]
@@ -5958,11 +6178,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\paola.giorsetti\\Desktop\\agile tp\\AhorcadoGrupo4\\AhorcadoGrupo4\\AhorcadoGrupo4.csproj",
+      "projectUniqueName": "C:\\Users\\paola.giorsetti\\Desktop\\agileFacu\\AhorcadoGrupo4\\AhorcadoGrupo4\\AhorcadoGrupo4.csproj",
       "projectName": "AhorcadoGrupo4",
-      "projectPath": "C:\\Users\\paola.giorsetti\\Desktop\\agile tp\\AhorcadoGrupo4\\AhorcadoGrupo4\\AhorcadoGrupo4.csproj",
+      "projectPath": "C:\\Users\\paola.giorsetti\\Desktop\\agileFacu\\AhorcadoGrupo4\\AhorcadoGrupo4\\AhorcadoGrupo4.csproj",
       "packagesPath": "C:\\Users\\paola.giorsetti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\paola.giorsetti\\Desktop\\agile tp\\AhorcadoGrupo4\\AhorcadoGrupo4\\obj\\",
+      "outputPath": "C:\\Users\\paola.giorsetti\\Desktop\\agileFacu\\AhorcadoGrupo4\\AhorcadoGrupo4\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5981,8 +6201,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\paola.giorsetti\\Desktop\\agile tp\\AhorcadoGrupo4\\AhorcadoGrupo4Codigo\\AhorcadoGrupo4Codigo.csproj": {
-              "projectPath": "C:\\Users\\paola.giorsetti\\Desktop\\agile tp\\AhorcadoGrupo4\\AhorcadoGrupo4Codigo\\AhorcadoGrupo4Codigo.csproj"
+            "C:\\Users\\paola.giorsetti\\Desktop\\agileFacu\\AhorcadoGrupo4\\AhorcadoGrupo4Codigo\\AhorcadoGrupo4Codigo.csproj": {
+              "projectPath": "C:\\Users\\paola.giorsetti\\Desktop\\agileFacu\\AhorcadoGrupo4\\AhorcadoGrupo4Codigo\\AhorcadoGrupo4Codigo.csproj"
             }
           }
         }
@@ -6005,7 +6225,23 @@
             "version": "[2.1.0, )",
             "autoReferenced": true
           },
+          "coverlet.collector": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.0.3, )"
+          },
+          "coverlet.msbuild": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.0.3, )"
+          },
           "xunit": {
+            "target": "Package",
+            "version": "[2.4.1, )"
+          },
+          "xunit.console": {
             "target": "Package",
             "version": "[2.4.1, )"
           },

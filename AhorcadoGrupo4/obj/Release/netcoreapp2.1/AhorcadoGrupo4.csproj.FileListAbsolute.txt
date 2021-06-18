@@ -1,0 +1,17 @@
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4\bin\Release\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4\bin\Release\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4\bin\Release\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4\bin\Release\netcoreapp2.1\AhorcadoGrupo4.deps.json
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4\bin\Release\netcoreapp2.1\AhorcadoGrupo4.runtimeconfig.json
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4\bin\Release\netcoreapp2.1\AhorcadoGrupo4.runtimeconfig.dev.json
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4\bin\Release\netcoreapp2.1\AhorcadoGrupo4.dll
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4\bin\Release\netcoreapp2.1\AhorcadoGrupo4.pdb
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4\bin\Release\netcoreapp2.1\AhorcadoGrupo4Codigo.dll
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4\bin\Release\netcoreapp2.1\AhorcadoGrupo4Codigo.pdb
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4\obj\Release\netcoreapp2.1\AhorcadoGrupo4.csprojAssemblyReference.cache
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4\obj\Release\netcoreapp2.1\AhorcadoGrupo4.csproj.CoreCompileInputs.cache
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4\obj\Release\netcoreapp2.1\AhorcadoGrupo4.AssemblyInfoInputs.cache
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4\obj\Release\netcoreapp2.1\AhorcadoGrupo4.AssemblyInfo.cs
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4\obj\Release\netcoreapp2.1\AhorcadoGrupo4.csproj.CopyComplete
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4\obj\Release\netcoreapp2.1\AhorcadoGrupo4.dll
+C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4\obj\Release\netcoreapp2.1\AhorcadoGrupo4.pdb
