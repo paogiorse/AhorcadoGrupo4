@@ -236,6 +236,60 @@ namespace AhorcadoGrupo4
             Assert.Equal(fallos, cantidadfallos);
         }
 
+        //Mostrar score final
+        //Juego perfecto
+        [Fact]
+        public void JuegoPerfecto()
+        {
+            //Arrange
+            var juego = new Jugada();
+            juego.palabraHardcodeada = "gato";
+            juego.letrasIngresadas = new List<char>() { 'g', 'a', 't', 'o'};
+            int scoreFinal = 100;
+
+            //Act
+            juego.MostrarPalabra(juego.palabraHardcodeada, juego.letrasIngresadas);
+            int score = juego.CalcularScore();
+
+            //Assert
+            Assert.Equal(scoreFinal, score);
+        }
+
+        //Juego con fallos
+        [Fact]
+        public void JuegoConFallos()
+        {
+            //Arrange
+            var juego = new Jugada();
+            juego.palabraHardcodeada = "gato";
+            juego.letrasIngresadas = new List<char>() { 'g', 'h', 't', 's', 'a', 'r', 'o'};
+            int scoreFinal = 70;
+
+            //Act
+            juego.MostrarPalabra(juego.palabraHardcodeada, juego.letrasIngresadas);
+            int score = juego.CalcularScore();
+
+            //Assert
+            Assert.Equal(scoreFinal, score);
+        }
+
+        //Juego perdido
+        [Fact]
+        public void JuegoPerdido()
+        {
+            //Arrange
+            var juego = new Jugada();
+            juego.palabraHardcodeada = "gato";
+            juego.letrasIngresadas = new List<char>() { 'e', 'h', 'y', 's', 'u', 'r', 'i' };
+            int scoreFinal = 0;
+
+            //Act
+            juego.MostrarPalabra(juego.palabraHardcodeada, juego.letrasIngresadas);
+            int score = juego.CalcularScore();
+
+            //Assert
+            Assert.Equal(scoreFinal, score);
+        }
 
     }
 }

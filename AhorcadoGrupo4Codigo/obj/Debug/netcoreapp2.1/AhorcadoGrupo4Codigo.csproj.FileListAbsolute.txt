@@ -16,3 +16,12 @@ C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4Codigo\o
 C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4Codigo\obj\Debug\netcoreapp2.1\AhorcadoGrupo4Codigo.dll
 C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4Codigo\obj\Debug\netcoreapp2.1\AhorcadoGrupo4Codigo.pdb
 C:\Users\paola.giorsetti\Desktop\agileFacu\AhorcadoGrupo4\AhorcadoGrupo4Codigo\obj\Debug\netcoreapp2.1\AhorcadoGrupo4Codigo.csprojAssemblyReference.cache
+C:\Ahorcado-Grupo4\AhorcadoGrupo4\AhorcadoGrupo4Codigo\bin\Debug\netcoreapp2.1\AhorcadoGrupo4Codigo.deps.json
+C:\Ahorcado-Grupo4\AhorcadoGrupo4\AhorcadoGrupo4Codigo\bin\Debug\netcoreapp2.1\AhorcadoGrupo4Codigo.dll
+C:\Ahorcado-Grupo4\AhorcadoGrupo4\AhorcadoGrupo4Codigo\bin\Debug\netcoreapp2.1\AhorcadoGrupo4Codigo.pdb
+C:\Ahorcado-Grupo4\AhorcadoGrupo4\AhorcadoGrupo4Codigo\obj\Debug\netcoreapp2.1\AhorcadoGrupo4Codigo.csprojAssemblyReference.cache
+C:\Ahorcado-Grupo4\AhorcadoGrupo4\AhorcadoGrupo4Codigo\obj\Debug\netcoreapp2.1\AhorcadoGrupo4Codigo.csproj.CoreCompileInputs.cache
+C:\Ahorcado-Grupo4\AhorcadoGrupo4\AhorcadoGrupo4Codigo\obj\Debug\netcoreapp2.1\AhorcadoGrupo4Codigo.AssemblyInfoInputs.cache
+C:\Ahorcado-Grupo4\AhorcadoGrupo4\AhorcadoGrupo4Codigo\obj\Debug\netcoreapp2.1\AhorcadoGrupo4Codigo.AssemblyInfo.cs
+C:\Ahorcado-Grupo4\AhorcadoGrupo4\AhorcadoGrupo4Codigo\obj\Debug\netcoreapp2.1\AhorcadoGrupo4Codigo.dll
+C:\Ahorcado-Grupo4\AhorcadoGrupo4\AhorcadoGrupo4Codigo\obj\Debug\netcoreapp2.1\AhorcadoGrupo4Codigo.pdb

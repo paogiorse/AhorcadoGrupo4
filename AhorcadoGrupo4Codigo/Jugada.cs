@@ -13,6 +13,7 @@ namespace AhorcadoGrupo4Codigo
         public List<char> letrasIngresadas = new List<char>();
         public List<string> opcionesPalabras = new List<string>() { "gato", "perro", "barco", "casa", "pelota" };
         public int cantidadFallos = 0;
+        public int score = 100;
         public string GenerarPalabra()
         {
             return palabraHardcodeada;
@@ -52,6 +53,7 @@ namespace AhorcadoGrupo4Codigo
                 else
                 {
                     cantidadFallos = cantidadFallos + 1;
+                    score = score - 10;
                 }
             }
             return palabraParcial;
@@ -89,6 +91,15 @@ namespace AhorcadoGrupo4Codigo
         public int CantidadFallos()
         {
             return cantidadFallos;
+        }
+
+        public int CalcularScore()
+        {
+            if (cantidadFallos == 7)
+            {
+                score = 0;
+            }
+            return score;
         }
     }
 }
